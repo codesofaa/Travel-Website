@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.2), rgba(16, 5, 5, 0.2)), 
+        url('./background/travelbg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.body-margin {
+  margin: 0 45px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1d2d2f;
+  padding: 10px 20px;
+  color: white;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.logo img {
+  width: 30px;
+  height: 30px;
+}
+
+.navLinks {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.navLinks a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+.searchBar {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 25px;
+  padding: 5px;
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  padding: 8px 12px;
+  border-radius: 20px;
+  width: 220px;
+}
+
+.searchBtn,
+.clearBtn {
+  background-color: #00787c;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.searchBar input {
+    border: none;
+    outline: none;
+}
+
+.searchBtn:hover,
+.clearBtn:hover {
+  background-color: #015b5f;
+}
+
+
+.hero-content {
+    margin-top: 100px;,
+    max-width: 600px; 
+    padding-left: 20px;
+}
+
+.hero-content h1 {
+    font-family: 'Playfair Display', serif; 
+    font-size: 4em;
+    font-weight: 700;
+    line-height: 1.1em; 
+    margin: 0;
+    color: white; 
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.4); 
+}
+
+.hero-content p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin: 30px 0;
+    color: white; 
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    display: inline-block;
+    border: 1px solid transparent;
+    padding: 2px;
+}
+
+.book-now-btn {
+    background-color: white; 
+    color: #333;
+    padding: 12px 25px;
+    border: 1px solid #ccc; 
+    
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s, border-color 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.book-now-btn:hover {
+
+    background-color: #007bff; 
+    color: white; 
+    border-color: #007bff; 
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.social-media {
+  position: fixed;
+  top: 40vh;
+  left: 0;
+  gap: 20px;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  padding: 0 20px;
+}
+
+
+.social-media a {
+  margin-right: 10px;
+}
+
+.social-media a i {
+  font-size: 24px; 
+  color: white; 
+}
+
+.social-media a i:hover {
+  color: #007bff; 
+}
+
+
+.about-page-content {
+    padding-top: 50px; /* Space below the navbar */
+    color: white; 
+}
+
+.about-hero-section h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 4em;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.company-info-box {
+    max-width: 900px;
+    margin: 40px 20px 80px 20px;
+    line-height: 1.6;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1em;
+    background: rgba(0, 0, 0, 0.2); /* Background for text readability */
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 5px solid #00787c; /* Subtle accent color */
+}
+
+.company-info-box p {
+    margin-bottom: 15px;
+}
+
+.company-info-box p strong {
+    font-weight: 700;
+    color: #4dc2c4; /* Light teal/cyan for emphasis */
+}
+
+/* --- OUR TEAM SECTION STYLES --- */
+
+.our-team-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3em;
+    font-weight: 700;
+    margin: 50px 0 30px 20px;
+}
+
+.team-members-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1000px;
+    margin: 0 auto 100px auto;
+    padding: 0 20px;
+}
+
+.team-member {
+    text-align: center;
+    max-width: 250px;
+    padding: 15px;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.2); 
+}
+
+.team-member i.fas.fa-user-circle {
+    font-size: 60px;
+    color: #00787c; /* Teal color for the icon */
+    margin-bottom: 10px;
+}
+
+.team-member p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.team-member strong {
+    display: block; 
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.team-role-btn {
+    background-color: #00787c;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+}
+
+.team-role-btn:hover {
+    background-color: #015b5f;
+}
+
+.contact-page-content {
+    display: flex;
+    justify-content: space-between; /* Pushes left section and form apart */
+    align-items: flex-start; /* Aligns content to the top */
+    padding-top: 100px; /* Space from navbar */
+    color: white;
+    max-width: 1200px; /* Limit overall width */
+    margin: 0 auto; /* Center the entire contact content */
+    padding-right: 45px; /* Adjust based on body-margin, ensure social media bar doesn't overlap */
+}
+
+.contact-left-section {
+    flex: 1; /* Allows it to take available space */
+    padding-left: 20px; /* Aligns with other page content */
+    min-width: 300px; /* Prevents it from becoming too narrow */
+}
+
+.contact-left-section h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 4em;
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-left: 40px;
+}
+
+.contact-left-section p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-left: 40px;
+}
+
+.contact-form-container {
+    flex: 1.5; /* Allows the form to take more space than the left section */
+    max-width: 600px; /* Max width for the form box */
+    background: rgba(0, 0, 0, 0.5); /* Darker background for the form, similar to screenshot */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block; /* Puts label above input */
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #555; /* Darker border for inputs */
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent input background */
+    color: white; /* Text color inside inputs */
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    outline: none;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group textarea:focus {
+    border-color: #00787c; /* Highlight border on focus */
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.form-group textarea {
+    resize: vertical; /* Allow vertical resizing only */
+    min-height: 100px; /* Minimum height for the textarea */
+}
+
+.submit-btn {
+    background-color: #00787c;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    width: 100%; /* Make the button full width */
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #015b5f;
+}
+
+/* --- RECOMMENDATION RESULTS STYLES (Appears below search bar/hero) --- */
+
+.results-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows cards to wrap to the next line */
+    gap: 40px; /* Space between the recommendation cards */
+    justify-content: center; /* Center the cards within the container */
+    padding: 80px 20px 80px 20px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px; /* Provides separation from the hero content above */
+}
+
+/* Base style for individual recommendation cards (Temples/Beaches) */
+.recommendation-card,
+.city-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    /* Allows for two cards per row with 40px gap in between */
+    width: calc(50% - 20px); 
+    min-width: 300px; 
+    flex-grow: 1; 
+}
+
+/* Styling for images inside the cards */
+.recommendation-card img,
+.city-card img {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover;
+}
+
+/* Styling for text content */
+.recommendation-card h3,
+.city-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5em;
+    margin: 15px 15px 5px 15px;
+    color: #00787c;
+}
+
+.recommendation-card p,
+.city-card p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    padding: 0 15px 15px 15px;
+    line-height: 1.4;
+}
+
+/* Style for the "Visit" button */
+.visit-btn {
+    background-color: #00787c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 500;
+    margin: 0 15px 15px 15px;
+    transition: background-color 0.3s;
+    display: block; 
+    width: calc(100% - 30px);
+}
+
+.visit-btn:hover {
+    background-color: #015b5f;
+}
