@@ -90,11 +90,26 @@ body {
   background-color: #015b5f;
 }
 
+.hero-section {
+    display: flex;
+    gap: 300px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
 
 .hero-content {
-    margin-top: 100px;,
-    max-width: 600px; 
-    padding-left: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  max-width: 600px;
+  padding-left: 20px;
 }
 
 .hero-content h1 {
@@ -103,6 +118,7 @@ body {
     font-weight: 700;
     line-height: 1.1em; 
     margin: 0;
+    margin-right: auto;
     color: white; 
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.4); 
 }
@@ -110,8 +126,8 @@ body {
 .hero-content p {
     font-family: 'Roboto', sans-serif;
     font-size: 1.1em;
+    margin-right: auto;
     line-height: 1.6;
-    margin: 30px 0;
     color: white; 
     text-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
     display: inline-block;
@@ -124,6 +140,7 @@ body {
     color: #333;
     padding: 12px 25px;
     border: 1px solid #ccc; 
+    margin-right: auto;
     
     cursor: pointer;
     font-size: 1em;
@@ -365,21 +382,40 @@ body {
 /* --- RECOMMENDATION RESULTS STYLES (Appears below search bar/hero) --- */
 
 .results-container {
-    display: flex;
-    flex-wrap: wrap; /* Allows cards to wrap to the next line */
-    gap: 40px; /* Space between the recommendation cards */
-    justify-content: center; /* Center the cards within the container */
-    padding: 80px 20px 80px 20px;
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px; /* Provides separation from the hero content above */
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: center;
+  padding: 80px 20px 80px 20px;
+  max-width: 1200px;
+  margin: 0;
+  margin-top: 0px;
+}
+
+.results-container{
+  flex: 1;
+  margin-left: auto;
+  order: 2;
+}
+
+.results-container p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-left: 40px;
+  margin-right: 40px;
+  color: white;
+}
+
+.results-container.clear {
+    background-color: transparent; /* Clear background color */
 }
 
 /* Base style for individual recommendation cards (Temples/Beaches) */
 .recommendation-card,
 .city-card {
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(0, 0, 0, 0.4);
     color: #333;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
@@ -404,7 +440,7 @@ body {
     font-family: 'Playfair Display', serif;
     font-size: 1.5em;
     margin: 15px 15px 5px 15px;
-    color: #00787c;
+    color: white;
 }
 
 .recommendation-card p,

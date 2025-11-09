@@ -137,12 +137,13 @@ document.addEventListener('DOMContentLoaded', () => {
         searchBtn.addEventListener('click', searchRecommendations);
     }
 
-    // Attach listener to the Clear Button
-    const clearBtn = document.querySelector('.clearBtn');
-    if (clearBtn) {
-        clearBtn.addEventListener('click', () => {
-            document.querySelector('.searchBar input').value = '';
-            displayRecommendations([]); // Clear the displayed results
-        });
-    }
+
+const clearBtn = document.querySelector('.clearBtn');
+if (clearBtn) {
+    clearBtn.addEventListener('click', () => {
+        document.querySelector('.results-container').innerHTML = '';
+        document.querySelector('.results-container').classList.remove('with-background');
+        document.querySelector('.results-container').classList.add('clear');
+    });
+}
 });
